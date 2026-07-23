@@ -12,6 +12,7 @@
 | **[candlestick-charting](candlestick-charting/)** | 日本蜡烛图（史蒂夫·尼森） | 38 种核心形态识别、反转/持续/十字线系列、多技术共同参照 | v1.0 |
 | **[trend-trading](trend-trading/)** | 波浪理论 + 均线 + EXPMA + 资金分析 | 趋势判断、入场/持仓/止损量化规则、波浪定位、底部识别 | v3.2 |
 | **[integrated-stock-analysis](integrated-stock-analysis/)** | 五大理论整合 | 五维交叉验证流水线、统一评分、信号矛盾优先级裁决 | v1.1 |
+| **[mi-stock-selection](mi-stock-selection/)** | MI师直播方法论（道氏+波浪+均线+量价+背离+三重共振） | 看多板块筛选、回踩低吸、底部信号确认、大盘门控与仓位风控 | v1.0 |
 
 ## 五维分析流水线
 
@@ -58,6 +59,11 @@ trend-trading/
 ├── integrated-stock-analysis/
 │   ├── SKILL.md                          # 综合分析技能定义
 │   └── references/quick_reference.md     # 五维交叉验证速查
+├── mi-stock-selection/
+│   ├── SKILL.md                          # MI师选股技能定义
+│   └── references/framework.md           # 方法论框架（判大势→定波浪→选板块→等结构→等信号→买点→风控）
+│   └── references/sector-view.md         # 看多板块与代表标的观点
+│   └── references/checklist.md           # 操作清单与一票否决项
 └── README.md                             # 本文件
 ```
 
@@ -95,6 +101,7 @@ trend-trading/
 | 蜡烛图 | 史蒂夫·尼森《日本蜡烛图技术》（第二版） |
 | 趋势交易 | 《股市交易实战手册》+ 7 次实战迭代优化 |
 | 综合分析 | 以上五本著作的整合提炼 |
+| MI师选股 | MI师（MI姐）直播实录蒸馏：道氏定方向、波浪定位置、均线+量价+背离定信号、三重共振定买点 |
 
 ## 设计原则
 
