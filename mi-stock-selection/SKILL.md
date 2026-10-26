@@ -1,6 +1,6 @@
 ---
 name: mi-stock-selection
-description: "This skill should be used when the user wants to screen A-share stocks, select sectors, or decide entry/exit timing using MI师/MI姐's distilled trading methodology. It encodes a complete top-down workflow: judge the broader market trend (Dow) then locate the Elliott wave position (ABC/1-2-3-5), pick sector by rotation (high vs bottom), wait for structure (moving-average support, W-bottom, divergence), wait for confirmation signals (volume plus big-yang-line plus long-lower-shadow), enter on triple-resonance (market plus sector plus stock), then apply position/risk control. Triggers include: 选股, 选板块, 买卖点, 大盘见底, 三重共振, 回踩低吸, 波浪ABC, 均线支撑, 底部板块, 高位三兄弟, MI师/MI姐 方法论, 医药/证券/红利 选股. All views are the host's personal opinions distilled from broadcasts, NOT investment advice."
+description: "This skill should be used when the user wants to screen A-share stocks, select sectors, or decide entry/exit timing using MI师/MI姐's distilled trading methodology. It encodes a complete top-down workflow: judge the broader market trend (Dow) then locate the Elliott wave position (ABC/1-2-3-5), pick sector by rotation (high vs bottom), wait for structure (moving-average support, W-bottom, divergence), wait for confirmation signals (volume plus big-yang-line plus long-lower-shadow), enter on triple-resonance (market plus sector plus stock), then apply position/risk control. Also encodes the small-yang-line accumulation pattern (小阳建仓): identify low-position gentle accumulation with quantified criteria and a TDX screener. Triggers include: 选股, 选板块, 买卖点, 大盘见底, 三重共振, 回踩低吸, 波浪ABC, 均线支撑, 底部板块, 高位三兄弟, MI师/MI姐 方法论, 医药/证券/红利 选股, 小阳建仓, 小阳线吸筹, 温水煮青蛙, 全市场扫描. All views are the host's personal opinions distilled from broadcasts, NOT investment advice."
 agent_created: true
 ---
 
@@ -58,6 +58,7 @@ agent_created: true
 ### Step 5 — 等确认信号（量价 + K 线）
 - **量价**：缩量企稳 + 增量资金进场 = 底部信号；高位巨量不涨 = 主力派发离场；跟主力资金流向选板块。
 - **K 线**：底部出现放量大阳线 / 长下影 = 动手信号；只有缩量小阴 = 继续等。"没有一根大阳线拉上去你这也不是底"。
+- **小阳建仓（潜伏期形态）**：低位连续小阳 + 温和放量 = 主力隐蔽吸筹，可轻仓跟随但**不构成买点**——真正的动手点在其后的放量大阳/突破。完整判据、量化口径与 TDX 全市场扫描公式见 `references/xiaoyang-accumulation.md`。
 
 ### Step 6 — 三重共振买点 + 仓位风控
 - **三重共振**：大盘企稳 + 板块在主线 + 个股回踩到位，三者同向才出手，缺一不动。
@@ -94,5 +95,7 @@ agent_created: true
 - `references/framework.md` — 12 个理论域 → 操作动作 的完整映射与速查表
 - `references/sector-view.md` — 看多/谨慎 板块与个股的跨场蒸馏视图（含日期）
 - `references/checklist.md` — 选股执行检查清单（含一票否决项）
+- `references/watchlist-review.md` — 自选池批量复盘（150+只）的数据获取顺序、判读速查表与已知坑
+- `references/xiaoyang-accumulation.md` — 小阳建仓形态：定义、五大特征量化口径、失败信号、TDX 选股公式与复盘判读速查
 
 > 注：本技能所有内容蒸馏自 AI 转写文本，存在音似误差（如"注顶"=筑顶、"铺位"=补仓、"拨印"=博弈），引用时已按语境校正。技术指标体系（MACD/KDJ/RSI/ATR/BOLL）来自主持人教学 PDF，作微观买卖点显微镜。
